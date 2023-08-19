@@ -10,7 +10,7 @@ RUN sudo apt-get install -y --fix-missing ./hpccsystems-platform-community_9.0.6
 RUN rm -f hpccsystems-platform-community_9.0.6-1focal_amd64_withsymbols.deb
 COPY ./environment/environment.xml /etc/HPCCSystems
 
-RUN /etc/init.d/hpcc-init start
+RUN sudo /etc/init.d/hpcc-init start
 
 COPY ./Datasets/musicmoz /var/lib/HPCCSystems/mydropzone/
 COPY ./Datasets/musicmsd.csv /var/lib/HPCCSystems/mydropzone/
