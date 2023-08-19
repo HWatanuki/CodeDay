@@ -16,6 +16,5 @@ COPY ./Datasets/musicmoz /var/lib/HPCCSystems/mydropzone/
 COPY ./Datasets/musicmsd.csv /var/lib/HPCCSystems/mydropzone/
 COPY ./Datasets/Spotify2000.csv /var/lib/HPCCSystems/mydropzone/
 
-RUN dfuplus action=spray srcfile=/var/lib/HPCCSystems/mydropzone/musicmoz dstcluster=mythor dstname=MIL::IN::MozTracks server=http://localhost:8010 overwrite=1 format=csv
 
 
