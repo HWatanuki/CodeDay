@@ -5,6 +5,8 @@ This year's challenge is "Music is Life"
 
 You will be introduced to big data concepts, how to process and analyze data using ECL (Enterprise Control Language). This challenge starts with an overview of ECL language and its syntax. Then  students are given a series of problems ranging  from easy to mid-level difficulty to solve. 
 
+Link to Gitpod: https://gitpod.io/#https://github.com/HWatanuki/CodeDay/tree/main
+
 ## Data Sources (Datasets)
 
 For the Music is Life Challenge you have 3 music datasets to explore:
