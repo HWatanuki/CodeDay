@@ -27,8 +27,6 @@ vscode:
 tasks:
   - name: Start HPCC-Systems Platform
     command: sudo /etc/init.d/hpcc-init start
-  - name: Spray datasets
-    command: dfuplus action=spray srcfile=/var/lib/HPCCSystems/mydropzone/musicmoz dstcluster=mythor dstname=MIL::IN::MozTracks server=http://localhost:8010 overwrite=1 format=csv
 
 
 
