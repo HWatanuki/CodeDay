@@ -27,7 +27,10 @@ vscode:
 tasks:
   - name: Start HPCC-Systems Platform & Spray Datasets
     init: sudo /etc/init.d/hpcc-init start
-    command: dfuplus action=spray srcfile=/var/lib/HPCCSystems/mydropzone/musicmoz dstcluster=mythor dstname=MIL::IN::MozTracks server=http://localhost:8010 overwrite=1 format=csv
+    command: |
+           dfuplus action=spray srcfile=/var/lib/HPCCSystems/mydropzone/musicmoz dstcluster=mythor dstname=MIL::IN::MozTracks server=http://localhost:8010 overwrite=1 format=csv
+           dfuplus action=spray srcfile=/var/lib/HPCCSystems/mydropzone/musicmsd.csv dstcluster=mythor dstname=MIL::IN::MillionSongs server=http://localhost:8010 overwrite=1 format=csv
+           dfuplus action=spray srcfile=/var/lib/HPCCSystems/mydropzone/Spotify2000.csv dstcluster=mythor dstname=MIL::IN::Spotify2000 server=http://localhost:8010 overwrite=1 format=csv
 
 
 
