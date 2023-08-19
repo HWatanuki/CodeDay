@@ -25,9 +25,8 @@ vscode:
     - https://github.com/GordonSmith/vscode-ojs/releases/latest/download/gordonsmith.observable-js.vsix
 
 tasks:
-  - name: Start HPCC-Systems Platform
-    command: sudo /etc/init.d/hpcc-init start
-  - name: Spray datasets
+  - name: Start HPCC-Systems Platform & Spray Datasets
+    init: sudo /etc/init.d/hpcc-init start
     command: dfuplus action=spray srcfile=/var/lib/HPCCSystems/mydropzone/musicmoz dstcluster=mythor dstname=MIL::IN::MozTracks server=http://localhost:8010 overwrite=1 format=csv
 
 
